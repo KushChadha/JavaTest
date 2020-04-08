@@ -78,7 +78,7 @@ public class MakingAnagramsTest {
 			System.out.println(temp[i]);
 			count += Math.abs(temp[i]);
 		}
-			
+		
 		return count;
     	
     }
