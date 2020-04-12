@@ -75,7 +75,6 @@ public class MakingAnagramsTest {
 		
 		int count = 0;
 		for (int i = 0; i < 26; i++) {
-			System.out.println(temp[i]);
 			count += Math.abs(temp[i]);
 		}
 		
