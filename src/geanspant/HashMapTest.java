@@ -1,4 +1,4 @@
-package gspann;
+package geanspant;
 
 import java.util.HashMap;
 import java.util.Map;

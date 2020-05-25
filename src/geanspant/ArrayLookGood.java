@@ -1,4 +1,4 @@
-package gspann;
+package geanspant;
 
 public class ArrayLookGood {
 

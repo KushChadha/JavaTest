@@ -36,11 +36,6 @@ public class SherlockAndTheValidStringTest {
 			return "YES";
 		}
 
-		/*
-		 * char[] ch = s.toCharArray(); Arrays.sort(s.toCharArray()); int[] a; for (int
-		 * i = 0; i < ch.length; i++) { a = }
-		 */
-
 		HashMap<Character, Integer> hMap = new HashMap<>();
 
 		for (int i = 0; i < s.length(); i++) {
@@ -51,16 +46,38 @@ public class SherlockAndTheValidStringTest {
 			}
 		}
 		System.out.println(hMap);
+		
 		int[] arr = new int[hMap.size()];
-		HashSet<Integer> set = new HashSet<>();
+		
+		int i = 0;
+		for (Entry<Character, Integer> entry : hMap.entrySet()) {
+			arr[i++] = entry.getValue();
+		}
+		
+		int temp = arr[0], count = 0;
+		
+		for (int j = 1; j < arr.length; j++) {
+			if (arr[j] + 1 == temp || arr[j] == temp + 1) {
+				count = count + 1;
+			} else 
+			
+			
+			System.out.println(arr[j]);
+			
+		}
+		return s;
+		
+		
+/*		int[] arr = new int[hMap.size()];
+//		HashSet<Integer> set = new HashSet<>();
 		int i = 0;
 
 		for (Entry<Character, Integer> entity : hMap.entrySet()) {
 			arr[i] = entity.getValue();
-			set.add(entity.getValue());
+//			set.add(entity.getValue());
 			i++;
 		}
-		System.out.println(set);
+//		System.out.println(set);
 		
 		Arrays.sort(arr);
 		int count = 0;
@@ -92,6 +109,38 @@ public class SherlockAndTheValidStringTest {
 			return "YES";
 		}
 
-		return "YES";
+		return "YES";*/
+		
+		
 	}
+	
+/*	static String isValid(String s) {
+	    final String GOOD = "YES";
+	    final String BAD = "NO";
+
+	    if(s.isEmpty()) return BAD;
+	    if(s.length() <= 3) return GOOD;
+
+	    int[] letters = new int[26];
+	    for(int i = 0; i < s.length(); i++){
+	        letters[s.charAt(i) - 'a']++;
+	    }
+	    Arrays.sort(letters);
+	    int i=0;
+	    while(letters[i]==0){
+	        i++;
+	    }
+	    //System.out.println(Arrays.toString(letters));
+	    int min = letters[i];   //the smallest frequency of some letter
+	    int max = letters[25]; // the largest frequency of some letter
+	    String ret = BAD;
+	    if(min == max) ret = GOOD;
+	    else{
+	        // remove one letter at higher frequency or the lower frequency 
+	        if(((max - min == 1) && (max > letters[24])) ||
+	            (min == 1) && (letters[i+1] == max))
+	            ret = GOOD;
+	    }
+	    return ret;
+	}*/
 }
