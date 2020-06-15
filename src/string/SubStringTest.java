@@ -4,6 +4,12 @@ public class SubStringTest {
 
 	public static void main(String[] args) {
 		
+		String c = "12 abcd";
+		String d = c.split(" ")[0];
+		System.out.println("d is " + d);
+		int i = Integer.parseInt(d);
+		System.out.println("i is " + i);
+		
 		String s = "Kush";
 		String[] a = s.split(s.substring(s.length()));
 		System.out.println(a[3]);
@@ -24,6 +30,8 @@ public class SubStringTest {
 		
 		int y = 2;
 		System.out.println(ab + y);
+		
+		
 	}
 
 }
