@@ -1,8 +1,14 @@
 package string;
 
-public class SubStringTest {
+import java.util.ArrayList;
+import java.util.List;
 
+public class SubStringTest {
+	
 	public static void main(String[] args) {
+		
+		String fruit = "strawb";
+		System.out.println(fruit.substring(2,5));
 		
 		String c = "12 abcd";
 		String d = c.split(" ")[0];
@@ -31,7 +37,6 @@ public class SubStringTest {
 		int y = 2;
 		System.out.println(ab + y);
 		
-		
 	}
-
+	
 }

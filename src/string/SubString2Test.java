@@ -1,6 +1,8 @@
 package string;
 
 public class SubString2Test {
+	
+	static int count = 0;
 
 	public static void main(String[] args) {
 		
