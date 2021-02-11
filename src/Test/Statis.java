@@ -1,6 +1,16 @@
 package Test;
 
-public class Statis {
+class Parent {
+	static void hello() {
+		System.out.println("Parent");
+	}
+}
+
+public class Statis extends Parent{
+	
+	static void hello() {
+		System.out.println("Child");
+	}
 	
 	static void abc() {
 		System.out.println("abc");
@@ -17,3 +27,5 @@ public class Statis {
 	}
 
 }
+
+
