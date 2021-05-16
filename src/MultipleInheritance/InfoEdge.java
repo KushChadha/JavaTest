@@ -8,9 +8,9 @@ class A {
 
 public class InfoEdge extends A {
 	
-	/*public void a() {
+	public void a() {
 		System.out.println("I am in infoedge");
-	}*/
+	}
 
 	public void b() {
 		System.out.println("I am in b()");
