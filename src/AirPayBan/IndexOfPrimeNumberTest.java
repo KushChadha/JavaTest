@@ -7,9 +7,9 @@ public class IndexOfPrimeNumberTest {
 		int[] a = {4,7,9,14,17,13,56,12,45,76};
 		
 		
-		for (int i = 2; i < a.length; i++) {
+		for (int i = 0; i < a.length; i++) {
 			
-			boolean value = primeNumber(i);
+			boolean value = primeNumber(a[i]);
 			if (value==true) {
 				System.out.println(a[i]);
 			}

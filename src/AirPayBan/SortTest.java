@@ -5,7 +5,7 @@ public class SortTest {
 	public static void main(String[] args) {
 		
 		String s1 = "abcde";
-		String s2 = "cdeaq";
+		String s2 = "cdeab";
 		
 		if (s1.length()==s2.length()) {
 			char c = s1.charAt(0);
