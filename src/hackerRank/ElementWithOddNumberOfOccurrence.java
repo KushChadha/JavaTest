@@ -13,24 +13,27 @@ public class ElementWithOddNumberOfOccurrence {
 		Scanner sc2 = new Scanner(System.in);
 		int n = 0;
 		String[] arr = null;
+		Map<String, Integer> map = new HashMap<String, Integer>();
 		try {
 			n = sc.nextInt();
 			arr = sc2.nextLine().split(" ");
-			if(n!=arr.length) {
-				System.out.println("galat");
-			}
 		} catch (Exception e) {
 			System.out.println("galat");
 		}
 		
-		Map<String, Integer> map = new HashMap<String, Integer>();
 		
-		for (int i = 0; i < arr.length; i++) {
-			String key = arr[i];
-			if(!map.containsKey(key)) {
-				map.put(key, 1);
+		if(arr!=null) {
+			if(n!=arr.length) {
+				System.out.println("galat");
 			} else {
-				map.put(key, map.get(key)+1);
+				for (int i = 0; i < arr.length; i++) {
+					String key = arr[i];
+					if(!map.containsKey(key)) {
+						map.put(key, 1);
+					} else {
+						map.put(key, map.get(key)+1);
+					}
+				}
 			}
 		}
 		
