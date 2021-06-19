@@ -1,6 +1,6 @@
 package AirPayBan;
 
-import java.util.HashSet;
+import java.util.*;
 
 public class ArrayTest {
 

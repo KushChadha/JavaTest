@@ -4,14 +4,14 @@ public class IndexOfPrimeNumberTest {
 
 	public static void main(String[] args) {
 		
-		int[] a = {4,7,9,14,17,13,56,12,45,76};
+		int[] a = {1,2,3,4,7,9,14,17,13,56,12,45,76};
 		
 		
 		for (int i = 0; i < a.length; i++) {
 			
 			boolean value = primeNumber(a[i]);
 			if (value==true) {
-				System.out.println(a[i]);
+				System.out.println(a[i] + " " + i);
 			}
 			
 		}
